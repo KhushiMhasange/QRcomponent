@@ -1,11 +1,12 @@
 body{
-    font-family: "Outfit",serif;
+    font-family: "Outfit",sans-serif;
     background-color:  hsl(212, 45%, 89%);
     display: flex; 
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    height: 100vh; 
+    min-height: 100svh; 
+    padding: 16px;
     margin: 0; 
 }
 
@@ -18,15 +19,15 @@ body{
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
+    max-width: 15rem;
     margin: auto;
     /* margin-top: 5%; */
 }
 
 img{
    display: block;
-   width: 100%;
-   max-width: 250px;
+   max-width: 100%;  /*makes the image shrink to fit inside its container.*/
+   height: auto;
    margin-bottom: 15px;
    border-radius: 10px;
 
@@ -35,10 +36,10 @@ img{
 .card-title{
     text-align: center;
     color: hsl(218, 44%, 22%);
-    max-width: 230px;
+    padding-inline: 10px;
 }
 
 .card-title p{
-    font-size: 14px;
+    font-size: 0.9rem;
     color:hsl(216, 15%, 48%);
 }
